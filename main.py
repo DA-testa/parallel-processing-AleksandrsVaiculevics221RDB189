@@ -17,9 +17,9 @@ def parallel_processing(n, k, data):
     heapq.heapify(t)
     for i in range(k):
        start, ind = heapq.heappop(t)
-        output.append((ind, start))
-        finish = start + data[i]
-        heapq.heappush(t, (finish, ind))
+       output.append((ind, start))
+       finish = start + data[i]
+       heapq.heappush(t, (finish, ind))
     return output
 
 def main():
